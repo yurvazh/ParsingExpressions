@@ -95,7 +95,7 @@ Node* inf_to_tree(string t) {
             cnt--;
         }
         if ((t[i] == '+') || (t[i] == '-') || (t[i] =='*') || (t[i] == '/')) {
-            if (cnt < cnt_min) {
+            if (cnt <= cnt_min) {
                 cnt_min = cnt;
                 ind = i;
             }
